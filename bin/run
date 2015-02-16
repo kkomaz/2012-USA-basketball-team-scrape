@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby 
+#chmod +x bin/cli
+require_relative '../config/environment'
+
+BasketballCLI.new
