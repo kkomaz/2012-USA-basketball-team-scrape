@@ -28,23 +28,20 @@ class BasketballCLI
     puts "Enter the player name"
     player_name = gets.strip
     player = @players.find do |player|
-      player.name == player_name
+             player.name == player_name
+             end
+    if player.height
+      puts "Player name: #{player.name}"
+      puts "Player position: #{player.position}"
+      puts "Player height: #{player.height}"
+      puts "Player weight: #{player.weight}"
+      puts "Player birth: #{player.birth}"
+      puts "Player team: #{player.team}"
+      puts "Player college: #{player.college}"
+      puts "Player hometown: #{player.hometown}"
+    else
+      puts "Player name: #{player.name}"
+      puts "Player position: #{player.position}"
     end
-    puts "Player name: #{player.name}"
-    puts "Player position: #{player.position}"
-    puts "Player height: #{player.height}"
-    puts "Player weight: #{player.weight}"
   end  
 end
-
-
-
-  
-
-
-#1. Command line interface 
-#2. Should know the command inputs --> list, show, help, exit
-
-#3. Scraping should go to a different class (but we need to call this)
-
-#4. 
