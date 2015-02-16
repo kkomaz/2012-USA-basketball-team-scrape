@@ -1,3 +1,7 @@
-Scraping for the 2012 USA Men's Basketball Team
-Instructions are straightforward.  
-If wrong code entered will not error but give you the option to re-enter
+Scraping for the 2012 USA Men's Basketball Team + faculty
+
+Testing Nokogiri scrapping techniques
+
+Scraping done through index to profile data manipulation
+
+
