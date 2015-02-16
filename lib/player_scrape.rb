@@ -29,7 +29,7 @@ class PlayerScrape
         player.name = player_url.search("div.moduleContentMain h2").first.text
         player.position = player_url.search("div.value span.full").first.text
      else
-        player.name = player_url.search("div.moduleContentMain h2").first.text
+        player.name = player_url.search("div.moduleContentMain h2").first.text.strip
         player.position = player_url.search("div.value span.full").first.text
         player.height = player_url.search("div.titleValuePair.hgt div.value span.full").first.text
         player.weight = player_url.search("div.titleValuePair.wgt div.value span.full").first.text
