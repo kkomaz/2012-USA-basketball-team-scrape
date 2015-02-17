@@ -30,7 +30,6 @@ class BasketballCLI
     player = @players.find do |player|
              player.name == player_name
              end
-    binding.pry
     if player.height
       puts "Player name: #{player.name}"
       puts "Player position: #{player.position}"
